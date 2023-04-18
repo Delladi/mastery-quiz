@@ -1,0 +1,150 @@
+FFFFFFF
+
+Failures:
+
+  1) Q1. Fill in the blanks in arithmetic calculations defines `five` by filling in the blank
+     Failure/Error: SafeRuby.eval("#{code}\n#{variable_name}")
+
+     RuntimeError:
+       (eval):20:in `<main>': undefined local variable or method `five' for main:Object (NameError)
+       	from /tmp/saferuby20230418-34-5e9vxb:50:in `eval'
+       	from /tmp/saferuby20230418-34-5e9vxb:50:in `<main>'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:45:in `rescue in eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:41:in `eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:20:in `eval'
+     # ./spec/question_1_spec.rb:39:in `safely_read_local_variable'
+     # ./spec/question_1_spec.rb:10:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # TypeError:
+     #   incompatible marshal file format (can't be read)
+     #   	format version 4.8 required; 40.101 given
+     #   /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:42:in `load'
+
+  2) Q1. Fill in the blanks in arithmetic calculations defines `seven` by filling in the blank
+     Failure/Error: SafeRuby.eval("#{code}\n#{variable_name}")
+
+     RuntimeError:
+       (eval):20:in `<main>': undefined local variable or method `seven' for main:Object (NameError)
+       	from /tmp/saferuby20230418-34-5yj2nz:50:in `eval'
+       	from /tmp/saferuby20230418-34-5yj2nz:50:in `<main>'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:45:in `rescue in eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:41:in `eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:20:in `eval'
+     # ./spec/question_1_spec.rb:39:in `safely_read_local_variable'
+     # ./spec/question_1_spec.rb:14:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # TypeError:
+     #   incompatible marshal file format (can't be read)
+     #   	format version 4.8 required; 40.101 given
+     #   /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:42:in `load'
+
+  3) Q1. Fill in the blanks in arithmetic calculations defines `two` by filling in the blanks
+     Failure/Error: SafeRuby.eval("#{code}\n#{variable_name}")
+
+     RuntimeError:
+       (eval):20:in `<main>': undefined local variable or method `two' for main:Object (NameError)
+       	from /tmp/saferuby20230418-34-cwpv42:50:in `eval'
+       	from /tmp/saferuby20230418-34-cwpv42:50:in `<main>'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:45:in `rescue in eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:41:in `eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:20:in `eval'
+     # ./spec/question_1_spec.rb:39:in `safely_read_local_variable'
+     # ./spec/question_1_spec.rb:18:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # TypeError:
+     #   incompatible marshal file format (can't be read)
+     #   	format version 4.8 required; 40.101 given
+     #   /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:42:in `load'
+
+  4) Q1. Fill in the blanks in arithmetic calculations defines `three_point_zero` by filling in the blank
+     Failure/Error: SafeRuby.eval("#{code}\n#{variable_name}")
+
+     RuntimeError:
+       (eval):20:in `<main>': undefined local variable or method `three_point_zero' for main:Object (NameError)
+       	from /tmp/saferuby20230418-34-busapk:50:in `eval'
+       	from /tmp/saferuby20230418-34-busapk:50:in `<main>'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:45:in `rescue in eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:41:in `eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:20:in `eval'
+     # ./spec/question_1_spec.rb:39:in `safely_read_local_variable'
+     # ./spec/question_1_spec.rb:22:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # TypeError:
+     #   incompatible marshal file format (can't be read)
+     #   	format version 4.8 required; 40.101 given
+     #   /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:42:in `load'
+
+  5) Q1. Fill in the blanks in arithmetic calculations defines `two_is_integer` by filling in the blank
+     Failure/Error: SafeRuby.eval("#{code}\n#{variable_name}")
+
+     RuntimeError:
+       (eval):20:in `<main>': undefined local variable or method `two_is_integer' for main:Object (NameError)
+       	from /tmp/saferuby20230418-34-r9nfsx:50:in `eval'
+       	from /tmp/saferuby20230418-34-r9nfsx:50:in `<main>'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:45:in `rescue in eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:41:in `eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:20:in `eval'
+     # ./spec/question_1_spec.rb:39:in `safely_read_local_variable'
+     # ./spec/question_1_spec.rb:27:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # TypeError:
+     #   incompatible marshal file format (can't be read)
+     #   	format version 4.8 required; 40.101 given
+     #   /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:42:in `load'
+
+  6) Q1. Fill in the blanks in arithmetic calculations defines `four` by filling in the blank
+     Failure/Error: SafeRuby.eval("#{code}\n#{variable_name}")
+
+     RuntimeError:
+       (eval):20:in `<main>': undefined local variable or method `four' for main:Object (NameError)
+       	from /tmp/saferuby20230418-34-etb6o:50:in `eval'
+       	from /tmp/saferuby20230418-34-etb6o:50:in `<main>'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:45:in `rescue in eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:41:in `eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:20:in `eval'
+     # ./spec/question_1_spec.rb:39:in `safely_read_local_variable'
+     # ./spec/question_1_spec.rb:31:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # TypeError:
+     #   incompatible marshal file format (can't be read)
+     #   	format version 4.8 required; 40.101 given
+     #   /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:42:in `load'
+
+  7) Q1. Fill in the blanks in arithmetic calculations defines `zero` by filling in the blank
+     Failure/Error: SafeRuby.eval("#{code}\n#{variable_name}")
+
+     RuntimeError:
+       (eval):20:in `<main>': undefined local variable or method `zero' for main:Object (NameError)
+       	from /tmp/saferuby20230418-34-3xzyv0:50:in `eval'
+       	from /tmp/saferuby20230418-34-3xzyv0:50:in `<main>'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:45:in `rescue in eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:41:in `eval'
+     # /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:20:in `eval'
+     # ./spec/question_1_spec.rb:39:in `safely_read_local_variable'
+     # ./spec/question_1_spec.rb:35:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # TypeError:
+     #   incompatible marshal file format (can't be read)
+     #   	format version 4.8 required; 40.101 given
+     #   /app/vendor/bundle/ruby/3.0.0/gems/safe_ruby-1.0.4/lib/safe_ruby/runner.rb:42:in `load'
+
+Finished in 2.14 seconds (files took 0.10701 seconds to load)
+7 examples, 7 failures
+
+Failed examples:
+
+rspec ./spec/question_1_spec.rb:9 # Q1. Fill in the blanks in arithmetic calculations defines `five` by filling in the blank
+rspec ./spec/question_1_spec.rb:13 # Q1. Fill in the blanks in arithmetic calculations defines `seven` by filling in the blank
+rspec ./spec/question_1_spec.rb:17 # Q1. Fill in the blanks in arithmetic calculations defines `two` by filling in the blanks
+rspec ./spec/question_1_spec.rb:21 # Q1. Fill in the blanks in arithmetic calculations defines `three_point_zero` by filling in the blank
+rspec ./spec/question_1_spec.rb:26 # Q1. Fill in the blanks in arithmetic calculations defines `two_is_integer` by filling in the blank
+rspec ./spec/question_1_spec.rb:30 # Q1. Fill in the blanks in arithmetic calculations defines `four` by filling in the blank
+rspec ./spec/question_1_spec.rb:34 # Q1. Fill in the blanks in arithmetic calculations defines `zero` by filling in the blank
+
