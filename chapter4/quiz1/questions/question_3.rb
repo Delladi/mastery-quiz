@@ -6,4 +6,9 @@
 #     previous two Fibonacci numbers together e.g. the third Fibonacci
 #     number is the result of `0 + 1`.
 # * `puts`es these numbers, one per line.
-
+first = 0
+second = 1
+20.times do
+  puts first
+  first, second = second, first + second
+end
