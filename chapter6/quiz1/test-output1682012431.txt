@@ -1,0 +1,154 @@
+....................FFFFFFFF
+
+Failures:
+
+  1) Q4. Big adventure immediately quit `puts`es bye
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /Bye!/m to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/Bye!/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  2) Q4. Big adventure look, quit `puts`es hall description, bye
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /You are standing in a hall with a marble floor. You see a door.
+       .*Bye!
+       /m to stdout, but output nothing
+       Diff:
+       @@ -1,4 +1,2 @@
+       -/You are standing in a hall with a marble floor. You see a door.
+       -.*Bye!
+       -/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  3) Q4. Big adventure look, incorrect command in hall, quit `puts`es hall description, bye
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /You are standing in a hall with a marble floor. You see a door.
+       .*Bye!
+       /m to stdout, but output nothing
+       Diff:
+       @@ -1,4 +1,2 @@
+       -/You are standing in a hall with a marble floor. You see a door.
+       -.*Bye!
+       -/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  4) Q4. Big adventure north to study, look, quit `puts`es study description, bye
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /You are in a warm and cosy study. You see a safe. You see a desk.
+       .*Bye!
+       /m to stdout, but output nothing
+       Diff:
+       @@ -1,4 +1,2 @@
+       -/You are in a warm and cosy study. You see a safe. You see a desk.
+       -.*Bye!
+       -/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:48:in `block (3 levels) in <top (required)>'
+
+  5) Q4. Big adventure north to study, look, incorrect command, quit `puts`es study description, bye
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /You are in a warm and cosy study. You see a safe. You see a desk.
+       .*Bye!
+       /m to stdout, but output nothing
+       Diff:
+       @@ -1,4 +1,2 @@
+       -/You are in a warm and cosy study. You see a safe. You see a desk.
+       -.*Bye!
+       -/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:61:in `block (3 levels) in <top (required)>'
+
+  6) Q4. Big adventure go between hall and study many times, look each time, quit `puts`es descriptions of both rooms several times, bye
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /You are standing in a hall with a marble floor. You see a door.
+       .*You are in a warm and cosy study. ... a safe. You see a desk.
+       .*You are standing in a hall with a marble floor. You see a door.
+       .*Bye!
+       /m to stdout, but output nothing
+       Diff:
+       @@ -1,8 +1,2 @@
+       -/You are standing in a hall with a marble floor. You see a door.
+       -.*You are in a warm and cosy study. You see a safe. You see a desk.
+       -.*You are standing in a hall with a marble floor. You see a door.
+       -.*You are in a warm and cosy study. You see a safe. You see a desk.
+       -.*You are standing in a hall with a marble floor. You see a door.
+       -.*Bye!
+       -/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:92:in `block (3 levels) in <top (required)>'
+
+  7) Q4. Big adventure north to study, look at desk, quit `puts`es desk description, bye
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /You see a piece of paper that reads, The combination is 2451.
+       .*Bye!
+       /m to stdout, but output nothing
+       Diff:
+       @@ -1,4 +1,2 @@
+       -/You see a piece of paper that reads, The combination is 2451.
+       -.*Bye!
+       -/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:105:in `block (3 levels) in <top (required)>'
+
+  8) Q4. Big adventure north to study, enter combination `puts`es win description
+     Failure/Error:
+       expect { load "questions/question_4.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /You see some diamonds in the safe, pick them up and make your escape
+       /m to stdout, but output nothing
+       Diff:
+       @@ -1,3 +1,2 @@
+       -/You see some diamonds in the safe, pick them up and make your escape
+       -/m
+       +""
+     # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+     # ./spec/question_4_spec.rb:116:in `block (3 levels) in <top (required)>'
+
+Finished in 5.43 seconds (files took 0.1579 seconds to load)
+28 examples, 8 failures
+
+Failed examples:
+
+rspec ./spec/question_4_spec.rb:8 # Q4. Big adventure immediately quit `puts`es bye
+rspec ./spec/question_4_spec.rb:21 # Q4. Big adventure look, quit `puts`es hall description, bye
+rspec ./spec/question_4_spec.rb:34 # Q4. Big adventure look, incorrect command in hall, quit `puts`es hall description, bye
+rspec ./spec/question_4_spec.rb:47 # Q4. Big adventure north to study, look, quit `puts`es study description, bye
+rspec ./spec/question_4_spec.rb:60 # Q4. Big adventure north to study, look, incorrect command, quit `puts`es study description, bye
+rspec ./spec/question_4_spec.rb:91 # Q4. Big adventure go between hall and study many times, look each time, quit `puts`es descriptions of both rooms several times, bye
+rspec ./spec/question_4_spec.rb:104 # Q4. Big adventure north to study, look at desk, quit `puts`es desk description, bye
+rspec ./spec/question_4_spec.rb:115 # Q4. Big adventure north to study, enter combination `puts`es win description
+
