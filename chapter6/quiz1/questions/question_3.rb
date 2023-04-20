@@ -25,4 +25,23 @@
 # 
 # * Note: To pass the tests, you'll need to `puts` exactly what's
 #   expected. Watch out for stray punctuation, capital letters, etc.
+location = "passage"
 
+while true
+  if location == "passage"
+    command = gets.chomp
+    if command == "north"
+      puts "You are in a scary cave."
+      location = "cave"
+    end
+  elsif location == "cave"
+    command = gets.chomp
+    if command == "south"
+      puts "You are in a scary passage."
+      location = "passage"
+    elsif command == "north"
+      puts "You walk into sunlight."
+      break
+    end
+  end
+end
