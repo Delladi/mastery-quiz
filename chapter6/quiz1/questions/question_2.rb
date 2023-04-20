@@ -19,4 +19,26 @@
 #
 # * Note: You can assume the players will only ever input `rock`,
 #   `paper` or `scissors`.
+def determine_winner(player1, player2)
+  if player1 == player2
+    return "It's a draw"
+  elsif player1 == "rock" && player2 == "scissors" ||
+        player1 == "paper" && player2 == "rock" ||
+        player1 == "scissors" && player2 == "paper"
+    return "Player 1 wins"
+  else
+    return "Player 2 wins"
+  end
+end
 
+# Ask for player 1's move
+print "Player 1, choose rock, paper, or scissors: "
+player1_move = gets.chomp
+
+# Ask for player 2's move
+print "Player 2, choose rock, paper, or scissors: "
+player2_move = gets.chomp
+
+# Determine the winner and print the result
+result = determine_winner(player1_move, player2_move)
+puts result
