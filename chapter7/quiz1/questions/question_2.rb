@@ -51,3 +51,35 @@
 #   input integers for group numbers that exist when they are asked
 #   for the number of a group to print out.
 
+puts "Enter number of groups"
+num_groups = gets.chomp.to_i
+
+people = []
+puts "Enter a name"
+name = gets.chomp
+while name != "stop"
+  people << name
+  puts "Enter a name"
+  name = gets.chomp
+end
+
+grouped_people = {}
+(1..num_groups).each do |group_num|
+  grouped_people[group_num] = []
+end
+
+people.each_with_index do |person, index|
+  group_num = (index % num_groups) + 1
+  grouped_people[group_num] << person
+end
+
+input = ""
+while input != "stop"
+  puts "Enter the number of a group to print out"
+  input = gets.chomp
+  if input != "stop"
+    group_num = input.to_i
+    group_people = grouped_people[group_num]
+    puts group_people.join(", ")
+  end
+end
