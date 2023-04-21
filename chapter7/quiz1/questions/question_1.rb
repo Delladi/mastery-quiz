@@ -19,3 +19,9 @@
 # * Note: You can assume the user will only enter integers separated
 #   by commas with no spaces.
 
+puts "Enter some numbers to graph:"
+input = gets.chomp.split(",").map(&:to_i)
+
+input.each do |num|
+  puts "-" * num
+end
