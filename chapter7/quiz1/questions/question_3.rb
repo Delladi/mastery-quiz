@@ -63,4 +63,37 @@
 #   ```
 
 river = "-----,--C--,CC-CC,CC-CC"
+player_position = 2
 
+loop do
+  # Check for crocodiles
+  if river[player_position] == "C"
+    puts "You were eaten."
+    break
+  end
+
+  # Print the river with the player
+  river[player_position] = "P"
+  puts river.tr(",", "\n")
+
+  # Check for winning condition
+  if river.end_with?("P")
+    puts "You survived!"
+    break
+  end
+
+  # Reset the player's position before getting input for next move
+  river[player_position] = "-"
+  
+  # Ask for the next move
+  puts "Type left, right or neither"
+  move = gets.chomp.downcase
+  
+  # Update the player's position based on the move
+  case move
+  when "left"
+    player_position -= 1
+  when "right"
+    player_position += 1
+  end
+end
