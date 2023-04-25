@@ -63,39 +63,84 @@
 #   ```
 
 river = "-----,--C--,CC-CC,CC-CC"
-player_pos = [1, 3] # row, column
-
-# Split the river into parts
-river_parts = river.split(',')
-
-# Game loop
-while true
-  # Check if the player is eaten
-  if river_parts[player_pos[0]][player_pos[1]] == 'C'
+array = river.split(",").to_a
+quit = 0  
+puts "--P--"
+puts array[1]
+puts array[2]
+puts array[3]
+puts "Type left, right or neither"
+user = gets.chomp
+while true do 
+  if user == "neither"
     puts "You were eaten."
+    quit = 1
+    break
+  end    
+  if user == "left"
+    puts array[0]
+    puts "-PC--"
+    puts array[2]
+    puts array[3]
+  end
+  if user == "right"
+    puts array[0]
+    puts "--CP-"
+    puts array[2]
+    puts array[3]
+  end
+  if user == "left"
+    puts "Type left, right or neither"
+    user = gets.chomp
+    if user == "right"
+      puts array[0]
+      puts array[1]
+      puts "CCPCC"
+      puts array[3]
+    elsif user == "left" or "neither"
+      puts "You were eaten."
+      quit += 1
+      break
+    end
+  elsif user == "right"
+    puts "Type left, right or neither"
+    user = gets.chomp
+    if user == "left"
+      puts array[0]
+      puts array[1]
+      puts "CCPCC"
+      puts array[3]               
+    elsif user == "right" or "neither"
+      puts "You were eaten."
+      quit += 1
+      break            
+    end
+  end
+  puts "Type left, right or neither"
+  user = gets.chomp
+  if user == "neither"
+    puts array[0]
+    puts array[1]
+    puts array[2]
+    puts "CCPCC"
+  elsif user == "left" or "right"
+    puts "You were eaten."
+    quit += 1
     break
   end
-  
-  # Print the river with the player
-  river_parts[player_pos[0]][player_pos[1]] = 'P'
-  puts river_parts.join("\n")
-  
-  # Ask the player for their move
-  print "Type left, right or neither\n"
-  move = gets.chomp
-  
-  # Move the player down the river
-  river_parts[player_pos[0]][player_pos[1]] = '-' # remove the player from the current position
-  case move
-  when 'left'
-    player_pos[1] -= 1
-  when 'right'
-    player_pos[1] += 1
-  end
-  
-  # Check if the player survived
-  if player_pos[0] == river_parts.length - 1
+  puts "Type left, right or neither"
+  user = gets.chomp
+  if user == "neither"
     puts "You survived!"
+    quit += 1
     break
   end
+  if user == "left" or "right"
+    puts "You were eaten."
+    quit += 1
+    break
+  end
+  if quit == 1
+    break
+  end 
 end
