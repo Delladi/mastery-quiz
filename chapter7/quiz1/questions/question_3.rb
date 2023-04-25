@@ -63,37 +63,39 @@
 #   ```
 
 river = "-----,--C--,CC-CC,CC-CC"
-player_position = 2
+player_pos = [1, 3] # row, column
 
-loop do
-  # Check for crocodiles
-  if river[player_position] == "C"
+# Split the river into parts
+river_parts = river.split(',')
+
+# Game loop
+while true
+  # Check if the player is eaten
+  if river_parts[player_pos[0]][player_pos[1]] == 'C'
     puts "You were eaten."
     break
   end
-
+  
   # Print the river with the player
-  river[player_position] = "P"
-  puts river.tr(",", "\n")
-
-  # Check for winning condition
-  if river.end_with?("P")
+  river_parts[player_pos[0]][player_pos[1]] = 'P'
+  puts river_parts.join("\n")
+  
+  # Ask the player for their move
+  print "Type left, right or neither\n"
+  move = gets.chomp
+  
+  # Move the player down the river
+  river_parts[player_pos[0]][player_pos[1]] = '-' # remove the player from the current position
+  case move
+  when 'left'
+    player_pos[1] -= 1
+  when 'right'
+    player_pos[1] += 1
+  end
+  
+  # Check if the player survived
+  if player_pos[0] == river_parts.length - 1
     puts "You survived!"
     break
-  end
-
-  # Reset the player's position before getting input for next move
-  river[player_position] = "-"
-  
-  # Ask for the next move
-  puts "Type left, right or neither"
-  move = gets.chomp.downcase
-  
-  # Update the player's position based on the move
-  case move
-  when "left"
-    player_position -= 1
-  when "right"
-    player_position += 1
   end
 end
