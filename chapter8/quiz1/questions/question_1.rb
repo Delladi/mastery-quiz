@@ -16,5 +16,21 @@
 # * Note: You can assume that the user will enter a word that only
 #   contains letters and blanks.  You can assume the word will be in
 #   uppercase.
-
-
+points = {
+  "A" => 1, "B" => 3, "C" => 3, "D" => 2, "E" => 1,
+  "F" => 4, "G" => 2, "H" => 4, "I" => 1, "J" => 8,
+  "K" => 5, "L" => 1, "M" => 3, "N" => 1, "O" => 1,
+  "P" => 3, "Q" => 10, "R" => 1, "S" => 1, "T" => 1,
+  "U" => 1, "V" => 4, "W" => 4, "X" => 8, "Y" => 4,
+  "Z" => 10, " " => 0
+}
+# Ask the user for a word
+print "Enter a word: "
+word = gets.chomp
+# Calculate the score for the word
+score = 0
+word.chars.each do |letter|
+  score += points[letter]
+end
+# Output the score
+puts "Score for #{word}: #{score}"
