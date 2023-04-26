@@ -30,3 +30,12 @@ people = [
   { "name" => "Will", "sport" => "cycling", "fruit" => "blackberry" }
 ]
 
+puts " Enter what category to search"
+category_input = gets.chomp
+puts "Enter what value to search for"
+value_input = gets.chomp
+people.each do |person|
+  if person[category_input] == value_input
+    puts person["name"]
+  end 
+end
