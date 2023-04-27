@@ -1,0 +1,182 @@
+..FFFFFFFFFFFFFFFFFFFF
+
+Failures:
+
+  1) Q1. Blackjack #move user inputs hit returns `"hit"`
+     Failure/Error: expect(move).to eq("hit")
+
+     NameError:
+       undefined local variable or method `move' for #<RSpec::ExampleGroups::Q1Blackjack::Move::UserInputsHit "returns `"hit"`" (./spec/question_1_spec.rb:52)>
+     # ./spec/question_1_spec.rb:54:in `block (4 levels) in <top (required)>'
+
+  2) Q1. Blackjack #move user inputs stick returns `"stick"`
+     Failure/Error: expect(move).to eq("stick")
+
+     NameError:
+       undefined local variable or method `move' for #<RSpec::ExampleGroups::Q1Blackjack::Move::UserInputsStick "returns `"stick"`" (./spec/question_1_spec.rb:61)>
+     # ./spec/question_1_spec.rb:63:in `block (4 levels) in <top (required)>'
+
+  3) Q1. Blackjack #move user inputs blah and then a valid move returns valid move (`"hit"`)
+     Failure/Error: expect(move).to eq("hit")
+
+     NameError:
+       undefined local variable or method `move' for #<RSpec::ExampleGroups::Q1Blackjack::Move::UserInputsBlahAndThenAValidMove "returns valid move (`"hit"`)" (./spec/question_1_spec.rb:70)>
+     # ./spec/question_1_spec.rb:72:in `block (4 levels) in <top (required)>'
+
+  4) Q1. Blackjack #score individual cards scores `"two"` as 2
+     Failure/Error: expect(score(["two"])).to eq(2)
+
+     NoMethodError:
+       undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"two"` as 2" (./spec/question_1_spec.rb:79)>
+     # ./spec/question_1_spec.rb:80:in `block (4 levels) in <top (required)>'
+
+  5) Q1. Blackjack #score individual cards scores `"three"` as 3
+     Failure/Error: expect(score(["three"])).to eq(3)
+
+     NoMethodError:
+       undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"three"` as 3" (./spec/question_1_spec.rb:83)>
+     # ./spec/question_1_spec.rb:84:in `block (4 levels) in <top (required)>'
+
+  6) Q1. Blackjack #score individual cards scores `"four"` as 4
+     Failure/Error: expect(score(["four"])).to eq(4)
+
+     NoMethodError:
+       undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"four"` as 4" (./spec/question_1_spec.rb:87)>
+     # ./spec/question_1_spec.rb:88:in `block (4 levels) in <top (required)>'
+
+  7) Q1. Blackjack #score individual cards scores `"five"` as 5
+     Failure/Error: expect(score(["five"])).to eq(5)
+
+     NoMethodError:
+       undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"five"` as 5" (./spec/question_1_spec.rb:91)>
+     # ./spec/question_1_spec.rb:92:in `block (4 levels) in <top (required)>'
+
+  8) Q1. Blackjack #score individual cards scores `"six"` as 6
+     Failure/Error: expect(score(["six"])).to eq(6)
+
+     NoMethodError:
+       undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"six"` as 6" (./spec/question_1_spec.rb:95)>
+     # ./spec/question_1_spec.rb:96:in `block (4 levels) in <top (required)>'
+
+  9) Q1. Blackjack #score individual cards scores `"seven"` as 7
+     Failure/Error: expect(score(["seven"])).to eq(7)
+
+     NoMethodError:
+       undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"seven"` as 7" (./spec/question_1_spec.rb:99)>
+     # ./spec/question_1_spec.rb:100:in `block (4 levels) in <top (required)>'
+
+  10) Q1. Blackjack #score individual cards scores `"eight"` as 8
+      Failure/Error: expect(score(["eight"])).to eq(8)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"eight"` as 8" (./spec/question_1_spec.rb:103)>
+      # ./spec/question_1_spec.rb:104:in `block (4 levels) in <top (required)>'
+
+  11) Q1. Blackjack #score individual cards scores `"nine"` as 9
+      Failure/Error: expect(score(["nine"])).to eq(9)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"nine"` as 9" (./spec/question_1_spec.rb:107)>
+      # ./spec/question_1_spec.rb:108:in `block (4 levels) in <top (required)>'
+
+  12) Q1. Blackjack #score individual cards scores `"ten"` as 10
+      Failure/Error: expect(score(["ten"])).to eq(10)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"ten"` as 10" (./spec/question_1_spec.rb:111)>
+      # ./spec/question_1_spec.rb:112:in `block (4 levels) in <top (required)>'
+
+  13) Q1. Blackjack #score individual cards scores `"jack"` as 10
+      Failure/Error: expect(score(["jack"])).to eq(10)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"jack"` as 10" (./spec/question_1_spec.rb:115)>
+      # ./spec/question_1_spec.rb:116:in `block (4 levels) in <top (required)>'
+
+  14) Q1. Blackjack #score individual cards scores `"queen"` as 10
+      Failure/Error: expect(score(["queen"])).to eq(10)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"queen"` as 10" (./spec/question_1_spec.rb:119)>
+      # ./spec/question_1_spec.rb:120:in `block (4 levels) in <top (required)>'
+
+  15) Q1. Blackjack #score individual cards scores `"king"` as 10
+      Failure/Error: expect(score(["king"])).to eq(10)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"king"` as 10" (./spec/question_1_spec.rb:123)>
+      # ./spec/question_1_spec.rb:124:in `block (4 levels) in <top (required)>'
+
+  16) Q1. Blackjack #score individual cards scores `"ace"` as 11
+      Failure/Error: expect(score(["ace"])).to eq(11)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::IndividualCards "scores `"ace"` as 11" (./spec/question_1_spec.rb:127)>
+      # ./spec/question_1_spec.rb:128:in `block (4 levels) in <top (required)>'
+
+  17) Q1. Blackjack #score adding up card scores scores `"two"`, `"jack"` and `"ace"` as 23
+      Failure/Error: expect(score(["two", "jack", "ace"])).to eq(23)
+
+      NoMethodError:
+        undefined method `score' for #<RSpec::ExampleGroups::Q1Blackjack::Score::AddingUpCardScores "scores `"two"`, `"jack"` and `"ace"` as 23" (./spec/question_1_spec.rb:133)>
+      # ./spec/question_1_spec.rb:134:in `block (4 levels) in <top (required)>'
+
+  18) Q1. Blackjack #run_game showing score so far as game is played `puts`es scores for two hits
+      Failure/Error:
+        expect { run_game }
+          .to output(/#{expected_output}/m).to_stdout
+
+      NameError:
+        undefined local variable or method `run_game' for #<RSpec::ExampleGroups::Q1Blackjack::RunGame::ShowingScoreSoFarAsGameIsPlayed "`puts`es scores for two hits" (./spec/question_1_spec.rb:148)>
+      # ./spec/question_1_spec.rb:187:in `block in set_user_input_and_check_expected_output'
+      # ./spec/question_1_spec.rb:187:in `set_user_input_and_check_expected_output'
+      # ./spec/question_1_spec.rb:150:in `block (4 levels) in <top (required)>'
+
+  19) Q1. Blackjack #run_game `puts`ing outcome of game player takes too many cards and busts `puts`es You busted with: 28
+      Failure/Error:
+        expect { run_game }
+          .to output(/#{expected_output}/m).to_stdout
+
+      NameError:
+        undefined local variable or method `run_game' for #<RSpec::ExampleGroups::Q1Blackjack::RunGame::PutsIngOutcomeOfGame::PlayerTakesTooManyCardsAndBusts "`puts`es You busted with: 28" (./spec/question_1_spec.rb:163)>
+      # ./spec/question_1_spec.rb:187:in `block in set_user_input_and_check_expected_output'
+      # ./spec/question_1_spec.rb:187:in `set_user_input_and_check_expected_output'
+      # ./spec/question_1_spec.rb:165:in `block (5 levels) in <top (required)>'
+
+  20) Q1. Blackjack #run_game `puts`ing outcome of game player doesn't take too many cards `puts`es You scored: 17
+      Failure/Error:
+        expect { run_game }
+          .to output(/#{expected_output}/m).to_stdout
+
+      NameError:
+        undefined local variable or method `run_game' for #<RSpec::ExampleGroups::Q1Blackjack::RunGame::PutsIngOutcomeOfGame::PlayerDoesnTTakeTooManyCards "`puts`es You scored: 17" (./spec/question_1_spec.rb:176)>
+      # ./spec/question_1_spec.rb:187:in `block in set_user_input_and_check_expected_output'
+      # ./spec/question_1_spec.rb:187:in `set_user_input_and_check_expected_output'
+      # ./spec/question_1_spec.rb:178:in `block (5 levels) in <top (required)>'
+
+Finished in 1.1 seconds (files took 0.07849 seconds to load)
+22 examples, 20 failures
+
+Failed examples:
+
+rspec ./spec/question_1_spec.rb:52 # Q1. Blackjack #move user inputs hit returns `"hit"`
+rspec ./spec/question_1_spec.rb:61 # Q1. Blackjack #move user inputs stick returns `"stick"`
+rspec ./spec/question_1_spec.rb:70 # Q1. Blackjack #move user inputs blah and then a valid move returns valid move (`"hit"`)
+rspec ./spec/question_1_spec.rb:79 # Q1. Blackjack #score individual cards scores `"two"` as 2
+rspec ./spec/question_1_spec.rb:83 # Q1. Blackjack #score individual cards scores `"three"` as 3
+rspec ./spec/question_1_spec.rb:87 # Q1. Blackjack #score individual cards scores `"four"` as 4
+rspec ./spec/question_1_spec.rb:91 # Q1. Blackjack #score individual cards scores `"five"` as 5
+rspec ./spec/question_1_spec.rb:95 # Q1. Blackjack #score individual cards scores `"six"` as 6
+rspec ./spec/question_1_spec.rb:99 # Q1. Blackjack #score individual cards scores `"seven"` as 7
+rspec ./spec/question_1_spec.rb:103 # Q1. Blackjack #score individual cards scores `"eight"` as 8
+rspec ./spec/question_1_spec.rb:107 # Q1. Blackjack #score individual cards scores `"nine"` as 9
+rspec ./spec/question_1_spec.rb:111 # Q1. Blackjack #score individual cards scores `"ten"` as 10
+rspec ./spec/question_1_spec.rb:115 # Q1. Blackjack #score individual cards scores `"jack"` as 10
+rspec ./spec/question_1_spec.rb:119 # Q1. Blackjack #score individual cards scores `"queen"` as 10
+rspec ./spec/question_1_spec.rb:123 # Q1. Blackjack #score individual cards scores `"king"` as 10
+rspec ./spec/question_1_spec.rb:127 # Q1. Blackjack #score individual cards scores `"ace"` as 11
+rspec ./spec/question_1_spec.rb:133 # Q1. Blackjack #score adding up card scores scores `"two"`, `"jack"` and `"ace"` as 23
+rspec ./spec/question_1_spec.rb:148 # Q1. Blackjack #run_game showing score so far as game is played `puts`es scores for two hits
+rspec ./spec/question_1_spec.rb:163 # Q1. Blackjack #run_game `puts`ing outcome of game player takes too many cards and busts `puts`es You busted with: 28
+rspec ./spec/question_1_spec.rb:176 # Q1. Blackjack #run_game `puts`ing outcome of game player doesn't take too many cards `puts`es You scored: 17
+
