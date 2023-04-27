@@ -59,3 +59,39 @@ def random_card
   cards[rand(13)]
 end
 
+def move
+  loop do
+    puts "Enter a move"
+    input = gets.chomp
+    return input if (input == "hit" || input == "stick")
+  end
+end
+def score(hand)
+  card_values = { "two" => 2, "three" => 3, "four" => 4,
+  "five" => 5, "six" => 6, "seven" => 7,
+  "eight" => 8, "nine" => 9, "ten" => 10, "jack" => 10,
+  "queen" => 10, "king" => 10, "ace" => 11 }
+  scoreofhand = 0
+  hand.each do |card|
+    scoreofhand += card_values[card]
+  end
+  scoreofhand
+end
+def run_game
+  cards = []
+  total_score = 0
+  while true do
+    if move == "hit" && total_score <= 21
+      cards.push(random_card)
+      total_score = score(cards)
+      puts "Score so far: #{total_score}"
+    elsif move == "stick"
+      break
+    end
+  end
+  if total_score <= 21
+    puts "You scored: #{total_score}"
+  else
+    puts "You busted with: #{total_score}"
+  end
+end
