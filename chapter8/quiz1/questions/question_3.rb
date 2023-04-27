@@ -36,3 +36,23 @@ people = [
   { "name" => "Will", "sport" => "cycling", "fruit" => "blackberry" }
 ]
 
+puts "Enter category sport or fruit"
+category = gets.chomp.downcase
+
+if category == "sport"
+  sport_groups = people.group_by { |person| person["sport"] }
+  
+  sport_groups.each do |sport, people|
+    puts "#{sport}"
+    people.each { |person| puts person["name"] }
+  end
+elsif category == "fruit"
+  fruit_groups = people.group_by { |person| person["fruit"] }
+  
+  fruit_groups.each do |fruit, people|
+    puts "#{fruit}"
+    people.each { |person| puts person["name"] }
+  end
+else
+  puts "Invalid category"
+end
