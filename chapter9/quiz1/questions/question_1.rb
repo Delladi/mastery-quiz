@@ -66,6 +66,7 @@ def move
     return input if (input == "hit" || input == "stick")
   end
 end
+
 def score(hand)
   card_values = { "two" => 2, "three" => 3, "four" => 4,
   "five" => 5, "six" => 6, "seven" => 7,
@@ -77,6 +78,7 @@ def score(hand)
   end
   scoreofhand
 end
+
 def run_game
   cards = []
   total_score = 0
