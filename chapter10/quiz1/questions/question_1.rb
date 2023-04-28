@@ -22,3 +22,41 @@
 
 # * Note: When you run the automated tests, make sure to remove from
 #   the top level of the file any calls to any methods.
+class Todo
+  def initialize(string)
+    @string = string
+  end 
+  
+  def text
+    return @string
+  end 
+end 
+
+class TodoList
+  def initialize
+    @todolist = []
+  end 
+    
+  def add(todo)
+    @todolist.push(todo.text)
+  end 
+        
+  def print
+    @todolist.each do |activity|
+      puts "* #{activity}"
+    end 
+  end
+end
+# Create a new TodoList object
+todo_list = TodoList.new
+
+# Create a new Todo object and add it to the list
+todo = Todo.new("Get milk")
+todo_list.add(todo)
+
+# Create another Todo object and add it to the list
+todo = Todo.new("Get the papers")
+todo_list.add(todo)
+
+# Print the list of todos
+todo_list.print
